@@ -387,6 +387,7 @@
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Player/TriggerScript.cs"
 "Assets/Scripts/World/Door.cs"
+"Assets/Scripts/World/Portal.cs"
 -langversion:9.0
 
 /deterministic

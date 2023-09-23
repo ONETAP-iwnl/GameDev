@@ -14,7 +14,7 @@ public class Door : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // Загружаем новую сцену по имени sceneToLoad
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
 
             // Выставляем новую позицию для игрока в новой сцене
             // (примечание: это будет работать, только если точка телепортации существует в новой сцене)
