@@ -1,11 +1,13 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TriggerScript : MonoBehaviour
 {
-    public Animator playerAnimator; // Ссылка на компонент анимации персонажа
+    public GameObject playerPrefab; // Ссылка на Prefab персонажа
+    public GameObject newObjectPrefab; // Ссылка на Prefab объекта, который должен появиться
+    public float delayBeforeChangeScene = 2f; // Задержка перед сменой сцены
     public string sceneToLoad; // Имя сцены, на которую вы хотите перейти
+
     private bool hasTriggered = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,17 +15,23 @@ public class TriggerScript : MonoBehaviour
         if (collision.CompareTag("Player") && !hasTriggered)
         {
             hasTriggered = true;
-            playerAnimator.SetTrigger("Fall"); // Запустить анимацию падения
-            StartCoroutine(LoadSceneAfterAnimation());
+
+            // Удаляем текущего персонажа
+            Destroy(collision.gameObject);
+
+            // Создаем новый объект через некоторое время
+            StartCoroutine(SpawnNewObject());
+            Instantiate(newObjectPrefab, transform.position, Quaternion.identity);
+            
         }
     }
 
-    private IEnumerator LoadSceneAfterAnimation()
+    private IEnumerator SpawnNewObject()
     {
-        // Ждем завершения анимации падения
-        yield return new WaitForSeconds(playerAnimator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(delayBeforeChangeScene);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
 
         // Загружаем новую сцену
-        SceneManager.LoadScene(3);
+
     }
 }
