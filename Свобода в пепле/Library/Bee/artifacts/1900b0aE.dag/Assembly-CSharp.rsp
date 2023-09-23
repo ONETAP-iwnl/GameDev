@@ -382,7 +382,10 @@
 -analyzer:"D:/unity/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/MainCamera/CameraFollow.cs"
 "Assets/Scripts/Menu/MenuController.cs"
+"Assets/Scripts/Menu/PauseMenu.cs"
+"Assets/Scripts/NPC/NPCController.cs"
 "Assets/Scripts/Player/PlayerController.cs"
+"Assets/Scripts/Player/TriggerScript.cs"
 "Assets/Scripts/World/Door.cs"
 -langversion:9.0
 

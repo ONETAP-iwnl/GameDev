@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ofice.unity
     guid: 60d0e87d22156304aa6ad6ddf9cbc10f
+  - enabled: 1
+    path: Assets/Scenes/TimelineOld.unity
+    guid: 2da4732663506a040b0ba527eb8f06c5
   m_configObjects: {}

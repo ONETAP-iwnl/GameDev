@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6689882496266386492}
   - component: {fileID: 6552594121978602450}
   - component: {fileID: 6921915538105908195}
-  - component: {fileID: 3399195056570690976}
+  - component: {fileID: -4597049915551842019}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -1104226996, guid: 63406052973ed6a4f84f6f1e98575a2e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,7 +123,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 1.03125, y: 3.4375}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -159,7 +159,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!114 &3399195056570690976
+--- !u!114 &-4597049915551842019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95caf56d6c6ff0647ab7773a178ae68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 6921915538105908195}
+  rb: {fileID: 0}
   moveVector: {x: 0, y: 0}
-  speed: 5
+  speed: 2
+  animator: {fileID: 0}

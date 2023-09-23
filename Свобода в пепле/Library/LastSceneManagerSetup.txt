@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Ofice.unity
+- path: Assets/Scenes/TimelineNow.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
