@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TimelineOldComtinue.unity
     guid: f12c67f3f22a35c4a96ee145d5190c89
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 0af673a8aee5cce4a9d3d99f69fc0feb
   m_configObjects: {}
